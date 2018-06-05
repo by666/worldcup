@@ -56,10 +56,10 @@
 
 
 -(void)initView{
-    self.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:1.0];
+    self.backgroundColor = c03;
     self.frame = CGRectMake(0, StatuBarHeight, ScreenWidth, NavigationBarHeight);
     
-    _titleLabel = [[UILabel alloc]initWithFont:STFont(17) text:mTitle textAlignment:NSTextAlignmentCenter textColor:c11 backgroundColor:nil multiLine:NO];
+    _titleLabel = [[UILabel alloc]initWithFont:STFont(17) text:mTitle textAlignment:NSTextAlignmentCenter textColor:cwhite backgroundColor:nil multiLine:NO];
     _titleLabel.frame = CGRectMake(0, 0, ScreenWidth, NavigationBarHeight);
     [self addSubview:_titleLabel];
     
@@ -75,12 +75,12 @@
     
     UIView *lineView = [[UIView alloc]init];
     lineView.frame = CGRectMake(0, NavigationBarHeight - LineHeight, ScreenWidth, LineHeight);
-    lineView.backgroundColor = c17;
+    lineView.backgroundColor = c01;
     [self addSubview:lineView];
     
     if(!IS_NS_STRING_EMPTY(mRightStr)){
         if(mRightColor == nil){
-            mRightColor = c12;
+            mRightColor = c01;
         }
 
         UIButton *button = [[UIButton alloc]initWithFont:STFont(14) text:mRightStr textColor:mRightColor backgroundColor:nil corner:0 borderWidth:0 borderColor:nil];

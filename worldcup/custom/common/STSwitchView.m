@@ -27,7 +27,7 @@
     self.frame = CGRectMake(0, 0, STWidth(42), STHeight(26));
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = STHeight(13);
-    self.backgroundColor = c12;
+    self.backgroundColor = c06;
     
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(onTouchSwitchView)];
     [self addGestureRecognizer:recognizer];
@@ -48,14 +48,14 @@
     if(_on){
         [UIView animateWithDuration:0.1f delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             weakSelf.pointView.frame = CGRectMake(STWidth(2), STHeight(2), STHeight(22), STHeight(22));
-            weakSelf.backgroundColor = c12;
+            weakSelf.backgroundColor = c04;
         } completion:^(BOOL finished) {
             
         }];
     }else{
         [UIView animateWithDuration:0.1f delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             weakSelf.pointView.frame = CGRectMake(STWidth(18), STHeight(2), STHeight(22), STHeight(22));
-            weakSelf.backgroundColor = c13;
+            weakSelf.backgroundColor = c06;
         } completion:^(BOOL finished) {
             
         }];
@@ -71,10 +71,10 @@
     _on = on;
     if(_on){
         _pointView.frame = CGRectMake(STWidth(18), STHeight(2), STHeight(22), STHeight(22));
-        self.backgroundColor = c13;
+        self.backgroundColor = c04;
     }else{
         _pointView.frame = CGRectMake(STWidth(2), STHeight(2), STHeight(22), STHeight(22));
-        self.backgroundColor = c12;
+        self.backgroundColor = c06;
     }
 }
 

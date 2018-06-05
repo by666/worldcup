@@ -30,7 +30,7 @@
 #import "STAlertUtil.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "NSString+Extension.h"
-
+#import "UIImageView+WebCache.h"
 
 
 

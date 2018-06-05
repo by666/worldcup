@@ -35,28 +35,12 @@
 		003EDBD120C551AF00CFCFE9 /* UILabel+StringFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB8220C551AF00CFCFE9 /* UILabel+StringFrame.m */; };
 		003EDBD220C551AF00CFCFE9 /* UITextField+Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB8420C551AF00CFCFE9 /* UITextField+Init.m */; };
 		003EDBD320C551AF00CFCFE9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB8620C551AF00CFCFE9 /* UIView+Frame.m */; };
-		003EDBD420C551AF00CFCFE9 /* address.txt in Resources */ = {isa = PBXBuildFile; fileRef = 003EDB8920C551AF00CFCFE9 /* address.txt */; };
-		003EDBD520C551AF00CFCFE9 /* AddressLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB8B20C551AF00CFCFE9 /* AddressLayerModel.m */; };
-		003EDBD620C551AF00CFCFE9 /* STAddressLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB8D20C551AF00CFCFE9 /* STAddressLayerView.m */; };
-		003EDBD720C551AF00CFCFE9 /* building1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 003EDB8F20C551AF00CFCFE9 /* building1.txt */; };
-		003EDBD820C551AF00CFCFE9 /* building2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 003EDB9020C551AF00CFCFE9 /* building2.txt */; };
-		003EDBD920C551AF00CFCFE9 /* building3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 003EDB9120C551AF00CFCFE9 /* building3.txt */; };
-		003EDBDA20C551AF00CFCFE9 /* BuildingLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB9320C551AF00CFCFE9 /* BuildingLayerModel.m */; };
-		003EDBDB20C551AF00CFCFE9 /* STBuildingLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB9520C551AF00CFCFE9 /* STBuildingLayerView.m */; };
 		003EDBDC20C551AF00CFCFE9 /* CircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB9720C551AF00CFCFE9 /* CircularProgressView.m */; };
-		003EDBDD20C551AF00CFCFE9 /* RecognizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB9A20C551AF00CFCFE9 /* RecognizeCell.m */; };
-		003EDBDE20C551AF00CFCFE9 /* RecognizeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB9C20C551AF00CFCFE9 /* RecognizeModel.m */; };
-		003EDBDF20C551AF00CFCFE9 /* STRecognizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB9E20C551AF00CFCFE9 /* STRecognizeView.m */; };
-		003EDBE020C551AF00CFCFE9 /* STSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBA120C551AF00CFCFE9 /* STSegmentCell.m */; };
-		003EDBE120C551AF00CFCFE9 /* STCarNumLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBA320C551AF00CFCFE9 /* STCarNumLayerView.m */; };
-		003EDBE220C551AF00CFCFE9 /* STCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBA520C551AF00CFCFE9 /* STCodeView.m */; };
-		003EDBE320C551AF00CFCFE9 /* STDateLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBA720C551AF00CFCFE9 /* STDateLayerView.m */; };
 		003EDBE420C551AF00CFCFE9 /* STEdgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBA920C551AF00CFCFE9 /* STEdgeLabel.m */; };
 		003EDBE520C551AF00CFCFE9 /* STLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBAB20C551AF00CFCFE9 /* STLayerView.m */; };
 		003EDBE620C551AF00CFCFE9 /* STNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBAD20C551AF00CFCFE9 /* STNavigationView.m */; };
 		003EDBE720C551AF00CFCFE9 /* STRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBAF20C551AF00CFCFE9 /* STRefreshTableView.m */; };
 		003EDBE820C551AF00CFCFE9 /* STResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBB120C551AF00CFCFE9 /* STResultView.m */; };
-		003EDBE920C551AF00CFCFE9 /* STSinglePickerLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBB320C551AF00CFCFE9 /* STSinglePickerLayerView.m */; };
 		003EDBEA20C551AF00CFCFE9 /* STSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBB520C551AF00CFCFE9 /* STSwitchView.m */; };
 		003EDBEB20C551AF00CFCFE9 /* STTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBB720C551AF00CFCFE9 /* STTabBarView.m */; };
 		003EDBEC20C551AF00CFCFE9 /* TouchScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDBB920C551AF00CFCFE9 /* TouchScrollView.m */; };
@@ -74,6 +58,15 @@
 		003EDC0B20C5549F00CFCFE9 /* MainPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC0A20C5549F00CFCFE9 /* MainPage.m */; };
 		003EDC0E20C5556A00CFCFE9 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC0D20C5556A00CFCFE9 /* MainView.m */; };
 		003EDC1120C5557500CFCFE9 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC1020C5557500CFCFE9 /* MainViewModel.m */; };
+		003EDC1420C62CF100CFCFE9 /* ScheduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC1320C62CF100CFCFE9 /* ScheduleModel.m */; };
+		003EDC1A20C6614400CFCFE9 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC1920C6614400CFCFE9 /* InfoView.m */; };
+		003EDC1D20C6615300CFCFE9 /* ScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC1C20C6615300CFCFE9 /* ScheduleView.m */; };
+		003EDC2520C6619700CFCFE9 /* InfoDetailPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC2420C6619700CFCFE9 /* InfoDetailPage.m */; };
+		003EDC2A20C661B500CFCFE9 /* ScheduleDetailPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC2920C661B500CFCFE9 /* ScheduleDetailPage.m */; };
+		003EDC2D20C6694000CFCFE9 /* ScheduleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC2C20C6694000CFCFE9 /* ScheduleViewCell.m */; };
+		003EDC3020C66C2800CFCFE9 /* InfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC2F20C66C2800CFCFE9 /* InfoViewModel.m */; };
+		003EDC3320C66C3500CFCFE9 /* ScheduleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC3220C66C3500CFCFE9 /* ScheduleViewModel.m */; };
+		003EDC3720C6723300CFCFE9 /* ScheduleRespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC3620C6723300CFCFE9 /* ScheduleRespondModel.m */; };
 		83707B895F078A657C64F156 /* Pods_worldcup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE5F5B46D5EA21EF0AD8E05 /* Pods_worldcup.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,34 +135,8 @@
 		003EDB8420C551AF00CFCFE9 /* UITextField+Init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Init.m"; sourceTree = "<group>"; };
 		003EDB8520C551AF00CFCFE9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		003EDB8620C551AF00CFCFE9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		003EDB8920C551AF00CFCFE9 /* address.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address.txt; sourceTree = "<group>"; };
-		003EDB8A20C551AF00CFCFE9 /* AddressLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressLayerModel.h; sourceTree = "<group>"; };
-		003EDB8B20C551AF00CFCFE9 /* AddressLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressLayerModel.m; sourceTree = "<group>"; };
-		003EDB8C20C551AF00CFCFE9 /* STAddressLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAddressLayerView.h; sourceTree = "<group>"; };
-		003EDB8D20C551AF00CFCFE9 /* STAddressLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAddressLayerView.m; sourceTree = "<group>"; };
-		003EDB8F20C551AF00CFCFE9 /* building1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = building1.txt; sourceTree = "<group>"; };
-		003EDB9020C551AF00CFCFE9 /* building2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = building2.txt; sourceTree = "<group>"; };
-		003EDB9120C551AF00CFCFE9 /* building3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = building3.txt; sourceTree = "<group>"; };
-		003EDB9220C551AF00CFCFE9 /* BuildingLayerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingLayerModel.h; sourceTree = "<group>"; };
-		003EDB9320C551AF00CFCFE9 /* BuildingLayerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingLayerModel.m; sourceTree = "<group>"; };
-		003EDB9420C551AF00CFCFE9 /* STBuildingLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBuildingLayerView.h; sourceTree = "<group>"; };
-		003EDB9520C551AF00CFCFE9 /* STBuildingLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBuildingLayerView.m; sourceTree = "<group>"; };
 		003EDB9620C551AF00CFCFE9 /* CircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularProgressView.h; sourceTree = "<group>"; };
 		003EDB9720C551AF00CFCFE9 /* CircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularProgressView.m; sourceTree = "<group>"; };
-		003EDB9920C551AF00CFCFE9 /* RecognizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeCell.h; sourceTree = "<group>"; };
-		003EDB9A20C551AF00CFCFE9 /* RecognizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognizeCell.m; sourceTree = "<group>"; };
-		003EDB9B20C551AF00CFCFE9 /* RecognizeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeModel.h; sourceTree = "<group>"; };
-		003EDB9C20C551AF00CFCFE9 /* RecognizeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognizeModel.m; sourceTree = "<group>"; };
-		003EDB9D20C551AF00CFCFE9 /* STRecognizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRecognizeView.h; sourceTree = "<group>"; };
-		003EDB9E20C551AF00CFCFE9 /* STRecognizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRecognizeView.m; sourceTree = "<group>"; };
-		003EDBA020C551AF00CFCFE9 /* STSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSegmentCell.h; sourceTree = "<group>"; };
-		003EDBA120C551AF00CFCFE9 /* STSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSegmentCell.m; sourceTree = "<group>"; };
-		003EDBA220C551AF00CFCFE9 /* STCarNumLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCarNumLayerView.h; sourceTree = "<group>"; };
-		003EDBA320C551AF00CFCFE9 /* STCarNumLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCarNumLayerView.m; sourceTree = "<group>"; };
-		003EDBA420C551AF00CFCFE9 /* STCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCodeView.h; sourceTree = "<group>"; };
-		003EDBA520C551AF00CFCFE9 /* STCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCodeView.m; sourceTree = "<group>"; };
-		003EDBA620C551AF00CFCFE9 /* STDateLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDateLayerView.h; sourceTree = "<group>"; };
-		003EDBA720C551AF00CFCFE9 /* STDateLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDateLayerView.m; sourceTree = "<group>"; };
 		003EDBA820C551AF00CFCFE9 /* STEdgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEdgeLabel.h; sourceTree = "<group>"; };
 		003EDBA920C551AF00CFCFE9 /* STEdgeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEdgeLabel.m; sourceTree = "<group>"; };
 		003EDBAA20C551AF00CFCFE9 /* STLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayerView.h; sourceTree = "<group>"; };
@@ -180,8 +147,6 @@
 		003EDBAF20C551AF00CFCFE9 /* STRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRefreshTableView.m; sourceTree = "<group>"; };
 		003EDBB020C551AF00CFCFE9 /* STResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STResultView.h; sourceTree = "<group>"; };
 		003EDBB120C551AF00CFCFE9 /* STResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STResultView.m; sourceTree = "<group>"; };
-		003EDBB220C551AF00CFCFE9 /* STSinglePickerLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSinglePickerLayerView.h; sourceTree = "<group>"; };
-		003EDBB320C551AF00CFCFE9 /* STSinglePickerLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSinglePickerLayerView.m; sourceTree = "<group>"; };
 		003EDBB420C551AF00CFCFE9 /* STSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSwitchView.h; sourceTree = "<group>"; };
 		003EDBB520C551AF00CFCFE9 /* STSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSwitchView.m; sourceTree = "<group>"; };
 		003EDBB620C551AF00CFCFE9 /* STTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTabBarView.h; sourceTree = "<group>"; };
@@ -206,6 +171,24 @@
 		003EDC0D20C5556A00CFCFE9 /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		003EDC0F20C5557500CFCFE9 /* MainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
 		003EDC1020C5557500CFCFE9 /* MainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
+		003EDC1220C62CF100CFCFE9 /* ScheduleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleModel.h; sourceTree = "<group>"; };
+		003EDC1320C62CF100CFCFE9 /* ScheduleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleModel.m; sourceTree = "<group>"; };
+		003EDC1820C6614400CFCFE9 /* InfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		003EDC1920C6614400CFCFE9 /* InfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		003EDC1B20C6615300CFCFE9 /* ScheduleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleView.h; sourceTree = "<group>"; };
+		003EDC1C20C6615300CFCFE9 /* ScheduleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleView.m; sourceTree = "<group>"; };
+		003EDC2320C6619700CFCFE9 /* InfoDetailPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoDetailPage.h; sourceTree = "<group>"; };
+		003EDC2420C6619700CFCFE9 /* InfoDetailPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoDetailPage.m; sourceTree = "<group>"; };
+		003EDC2820C661B500CFCFE9 /* ScheduleDetailPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailPage.h; sourceTree = "<group>"; };
+		003EDC2920C661B500CFCFE9 /* ScheduleDetailPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailPage.m; sourceTree = "<group>"; };
+		003EDC2B20C6694000CFCFE9 /* ScheduleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewCell.h; sourceTree = "<group>"; };
+		003EDC2C20C6694000CFCFE9 /* ScheduleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewCell.m; sourceTree = "<group>"; };
+		003EDC2E20C66C2800CFCFE9 /* InfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewModel.h; sourceTree = "<group>"; };
+		003EDC2F20C66C2800CFCFE9 /* InfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewModel.m; sourceTree = "<group>"; };
+		003EDC3120C66C3500CFCFE9 /* ScheduleViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewModel.h; sourceTree = "<group>"; };
+		003EDC3220C66C3500CFCFE9 /* ScheduleViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewModel.m; sourceTree = "<group>"; };
+		003EDC3520C6723300CFCFE9 /* ScheduleRespondModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleRespondModel.h; sourceTree = "<group>"; };
+		003EDC3620C6723300CFCFE9 /* ScheduleRespondModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleRespondModel.m; sourceTree = "<group>"; };
 		0BE5F5B46D5EA21EF0AD8E05 /* Pods_worldcup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_worldcup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B663E8DAD9BB96CBB69816 /* Pods-worldcup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldcup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-worldcup/Pods-worldcup.debug.xcconfig"; sourceTree = "<group>"; };
 		F215627FF075B719AEDD0E1D /* Pods-worldcup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldcup.release.xcconfig"; path = "Pods/Target Support Files/Pods-worldcup/Pods-worldcup.release.xcconfig"; sourceTree = "<group>"; };
@@ -457,18 +440,8 @@
 		003EDB8720C551AF00CFCFE9 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				003EDB8820C551AF00CFCFE9 /* address */,
-				003EDB8E20C551AF00CFCFE9 /* building */,
 				003EDB9620C551AF00CFCFE9 /* CircularProgressView.h */,
 				003EDB9720C551AF00CFCFE9 /* CircularProgressView.m */,
-				003EDB9820C551AF00CFCFE9 /* recognize */,
-				003EDB9F20C551AF00CFCFE9 /* segment */,
-				003EDBA220C551AF00CFCFE9 /* STCarNumLayerView.h */,
-				003EDBA320C551AF00CFCFE9 /* STCarNumLayerView.m */,
-				003EDBA420C551AF00CFCFE9 /* STCodeView.h */,
-				003EDBA520C551AF00CFCFE9 /* STCodeView.m */,
-				003EDBA620C551AF00CFCFE9 /* STDateLayerView.h */,
-				003EDBA720C551AF00CFCFE9 /* STDateLayerView.m */,
 				003EDBA820C551AF00CFCFE9 /* STEdgeLabel.h */,
 				003EDBA920C551AF00CFCFE9 /* STEdgeLabel.m */,
 				003EDBAA20C551AF00CFCFE9 /* STLayerView.h */,
@@ -479,8 +452,6 @@
 				003EDBAF20C551AF00CFCFE9 /* STRefreshTableView.m */,
 				003EDBB020C551AF00CFCFE9 /* STResultView.h */,
 				003EDBB120C551AF00CFCFE9 /* STResultView.m */,
-				003EDBB220C551AF00CFCFE9 /* STSinglePickerLayerView.h */,
-				003EDBB320C551AF00CFCFE9 /* STSinglePickerLayerView.m */,
 				003EDBB420C551AF00CFCFE9 /* STSwitchView.h */,
 				003EDBB520C551AF00CFCFE9 /* STSwitchView.m */,
 				003EDBB620C551AF00CFCFE9 /* STTabBarView.h */,
@@ -491,59 +462,12 @@
 			path = common;
 			sourceTree = "<group>";
 		};
-		003EDB8820C551AF00CFCFE9 /* address */ = {
-			isa = PBXGroup;
-			children = (
-				003EDB8920C551AF00CFCFE9 /* address.txt */,
-				003EDB8A20C551AF00CFCFE9 /* AddressLayerModel.h */,
-				003EDB8B20C551AF00CFCFE9 /* AddressLayerModel.m */,
-				003EDB8C20C551AF00CFCFE9 /* STAddressLayerView.h */,
-				003EDB8D20C551AF00CFCFE9 /* STAddressLayerView.m */,
-			);
-			path = address;
-			sourceTree = "<group>";
-		};
-		003EDB8E20C551AF00CFCFE9 /* building */ = {
-			isa = PBXGroup;
-			children = (
-				003EDB8F20C551AF00CFCFE9 /* building1.txt */,
-				003EDB9020C551AF00CFCFE9 /* building2.txt */,
-				003EDB9120C551AF00CFCFE9 /* building3.txt */,
-				003EDB9220C551AF00CFCFE9 /* BuildingLayerModel.h */,
-				003EDB9320C551AF00CFCFE9 /* BuildingLayerModel.m */,
-				003EDB9420C551AF00CFCFE9 /* STBuildingLayerView.h */,
-				003EDB9520C551AF00CFCFE9 /* STBuildingLayerView.m */,
-			);
-			path = building;
-			sourceTree = "<group>";
-		};
-		003EDB9820C551AF00CFCFE9 /* recognize */ = {
-			isa = PBXGroup;
-			children = (
-				003EDB9920C551AF00CFCFE9 /* RecognizeCell.h */,
-				003EDB9A20C551AF00CFCFE9 /* RecognizeCell.m */,
-				003EDB9B20C551AF00CFCFE9 /* RecognizeModel.h */,
-				003EDB9C20C551AF00CFCFE9 /* RecognizeModel.m */,
-				003EDB9D20C551AF00CFCFE9 /* STRecognizeView.h */,
-				003EDB9E20C551AF00CFCFE9 /* STRecognizeView.m */,
-			);
-			path = recognize;
-			sourceTree = "<group>";
-		};
-		003EDB9F20C551AF00CFCFE9 /* segment */ = {
-			isa = PBXGroup;
-			children = (
-				003EDBA020C551AF00CFCFE9 /* STSegmentCell.h */,
-				003EDBA120C551AF00CFCFE9 /* STSegmentCell.m */,
-			);
-			path = segment;
-			sourceTree = "<group>";
-		};
 		003EDBED20C5523E00CFCFE9 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				003EDC0C20C5556A00CFCFE9 /* MainView.h */,
-				003EDC0D20C5556A00CFCFE9 /* MainView.m */,
+				003EDC1E20C6615E00CFCFE9 /* main */,
+				003EDC1F20C6616600CFCFE9 /* info */,
+				003EDC2020C6616A00CFCFE9 /* schedule */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -551,7 +475,10 @@
 		003EDBEE20C5524200CFCFE9 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				003EDC3420C6721600CFCFE9 /* schedule */,
 				003EDBF120C5527100CFCFE9 /* net */,
+				003EDC1220C62CF100CFCFE9 /* ScheduleModel.h */,
+				003EDC1320C62CF100CFCFE9 /* ScheduleModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -559,8 +486,9 @@
 		003EDBEF20C5524500CFCFE9 /* page */ = {
 			isa = PBXGroup;
 			children = (
-				003EDC0920C5549F00CFCFE9 /* MainPage.h */,
-				003EDC0A20C5549F00CFCFE9 /* MainPage.m */,
+				003EDC2620C6619900CFCFE9 /* schedule */,
+				003EDC2220C6618500CFCFE9 /* info */,
+				003EDC2120C6617E00CFCFE9 /* main */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -570,6 +498,10 @@
 			children = (
 				003EDC0F20C5557500CFCFE9 /* MainViewModel.h */,
 				003EDC1020C5557500CFCFE9 /* MainViewModel.m */,
+				003EDC2E20C66C2800CFCFE9 /* InfoViewModel.h */,
+				003EDC2F20C66C2800CFCFE9 /* InfoViewModel.m */,
+				003EDC3120C66C3500CFCFE9 /* ScheduleViewModel.h */,
+				003EDC3220C66C3500CFCFE9 /* ScheduleViewModel.m */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -581,6 +513,71 @@
 				003EDBF320C5528A00CFCFE9 /* RespondModel.m */,
 			);
 			path = net;
+			sourceTree = "<group>";
+		};
+		003EDC1E20C6615E00CFCFE9 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC0C20C5556A00CFCFE9 /* MainView.h */,
+				003EDC0D20C5556A00CFCFE9 /* MainView.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		003EDC1F20C6616600CFCFE9 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC1820C6614400CFCFE9 /* InfoView.h */,
+				003EDC1920C6614400CFCFE9 /* InfoView.m */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		003EDC2020C6616A00CFCFE9 /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC1B20C6615300CFCFE9 /* ScheduleView.h */,
+				003EDC1C20C6615300CFCFE9 /* ScheduleView.m */,
+				003EDC2B20C6694000CFCFE9 /* ScheduleViewCell.h */,
+				003EDC2C20C6694000CFCFE9 /* ScheduleViewCell.m */,
+			);
+			path = schedule;
+			sourceTree = "<group>";
+		};
+		003EDC2120C6617E00CFCFE9 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC0920C5549F00CFCFE9 /* MainPage.h */,
+				003EDC0A20C5549F00CFCFE9 /* MainPage.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		003EDC2220C6618500CFCFE9 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC2320C6619700CFCFE9 /* InfoDetailPage.h */,
+				003EDC2420C6619700CFCFE9 /* InfoDetailPage.m */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		003EDC2620C6619900CFCFE9 /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC2820C661B500CFCFE9 /* ScheduleDetailPage.h */,
+				003EDC2920C661B500CFCFE9 /* ScheduleDetailPage.m */,
+			);
+			path = schedule;
+			sourceTree = "<group>";
+		};
+		003EDC3420C6721600CFCFE9 /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC3520C6723300CFCFE9 /* ScheduleRespondModel.h */,
+				003EDC3620C6723300CFCFE9 /* ScheduleRespondModel.m */,
+			);
+			path = schedule;
 			sourceTree = "<group>";
 		};
 		3E592FEA5C30DC9688CF0142 /* Frameworks */ = {
@@ -669,11 +666,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003EDBD820C551AF00CFCFE9 /* building2.txt in Resources */,
-				003EDBD920C551AF00CFCFE9 /* building3.txt in Resources */,
 				003EDB2D20C5361700CFCFE9 /* Assets.xcassets in Resources */,
-				003EDBD720C551AF00CFCFE9 /* building1.txt in Resources */,
-				003EDBD420C551AF00CFCFE9 /* address.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,15 +728,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003EDBE020C551AF00CFCFE9 /* STSegmentCell.m in Sources */,
+				003EDC1420C62CF100CFCFE9 /* ScheduleModel.m in Sources */,
 				003EDBC120C551AF00CFCFE9 /* STFileUtil.m in Sources */,
 				003EDBBF20C551AF00CFCFE9 /* STObserverManager.m in Sources */,
 				003EDB2820C5360E00CFCFE9 /* ViewController.m in Sources */,
 				003EDBE820C551AF00CFCFE9 /* STResultView.m in Sources */,
 				003EDBC620C551AF00CFCFE9 /* STRuntimeUtil.m in Sources */,
-				003EDBDF20C551AF00CFCFE9 /* STRecognizeView.m in Sources */,
 				003EDBBA20C551AF00CFCFE9 /* BaseViewController.m in Sources */,
-				003EDBDB20C551AF00CFCFE9 /* STBuildingLayerView.m in Sources */,
 				003EDBEC20C551AF00CFCFE9 /* TouchScrollView.m in Sources */,
 				003EDBC420C551AF00CFCFE9 /* STNetUtil.m in Sources */,
 				003EDB3320C5361700CFCFE9 /* main.m in Sources */,
@@ -751,42 +742,41 @@
 				003EDBC920C551AF00CFCFE9 /* STAlertUtil.m in Sources */,
 				003EDC0E20C5556A00CFCFE9 /* MainView.m in Sources */,
 				003EDC1120C5557500CFCFE9 /* MainViewModel.m in Sources */,
-				003EDBE120C551AF00CFCFE9 /* STCarNumLayerView.m in Sources */,
 				003EDBE520C551AF00CFCFE9 /* STLayerView.m in Sources */,
-				003EDBD520C551AF00CFCFE9 /* AddressLayerModel.m in Sources */,
 				003EDBC220C551AF00CFCFE9 /* STUserDefaults.m in Sources */,
-				003EDBE920C551AF00CFCFE9 /* STSinglePickerLayerView.m in Sources */,
 				003EDBD120C551AF00CFCFE9 /* UILabel+StringFrame.m in Sources */,
-				003EDBDA20C551AF00CFCFE9 /* BuildingLayerModel.m in Sources */,
 				003EDBC320C551AF00CFCFE9 /* STLog.m in Sources */,
 				003EDBEB20C551AF00CFCFE9 /* STTabBarView.m in Sources */,
+				003EDC2A20C661B500CFCFE9 /* ScheduleDetailPage.m in Sources */,
 				003EDB2520C5360E00CFCFE9 /* AppDelegate.m in Sources */,
+				003EDC1D20C6615300CFCFE9 /* ScheduleView.m in Sources */,
 				003EDBBD20C551AF00CFCFE9 /* STConvertUtil.m in Sources */,
-				003EDBE220C551AF00CFCFE9 /* STCodeView.m in Sources */,
 				003EDBCD20C551AF00CFCFE9 /* NSString+Extension.m in Sources */,
-				003EDBDE20C551AF00CFCFE9 /* RecognizeModel.m in Sources */,
 				003EDBDC20C551AF00CFCFE9 /* CircularProgressView.m in Sources */,
 				003EDBF420C5528A00CFCFE9 /* RespondModel.m in Sources */,
 				003EDBE720C551AF00CFCFE9 /* STRefreshTableView.m in Sources */,
 				003EDBCC20C551AF00CFCFE9 /* STPUtil.m in Sources */,
 				003EDBBE20C551AF00CFCFE9 /* STObserver.m in Sources */,
-				003EDBDD20C551AF00CFCFE9 /* RecognizeCell.m in Sources */,
+				003EDC2D20C6694000CFCFE9 /* ScheduleViewCell.m in Sources */,
 				003EDBCF20C551AF00CFCFE9 /* UILabel+ContentSize.m in Sources */,
 				003EDBD020C551AF00CFCFE9 /* UILabel+Init.m in Sources */,
 				003EDBC720C551AF00CFCFE9 /* STSoundUtil.m in Sources */,
 				003EDBC020C551AF00CFCFE9 /* STDataBaseUtil.m in Sources */,
-				003EDBD620C551AF00CFCFE9 /* STAddressLayerView.m in Sources */,
 				003EDBCE20C551AF00CFCFE9 /* UIButton+Init.m in Sources */,
 				003EDBCB20C551AF00CFCFE9 /* STColorUtil.m in Sources */,
 				003EDBD320C551AF00CFCFE9 /* UIView+Frame.m in Sources */,
+				003EDC3720C6723300CFCFE9 /* ScheduleRespondModel.m in Sources */,
 				003EDBC520C551AF00CFCFE9 /* STUpdateUtil.m in Sources */,
 				003EDBE620C551AF00CFCFE9 /* STNavigationView.m in Sources */,
+				003EDC3320C66C3500CFCFE9 /* ScheduleViewModel.m in Sources */,
 				003EDBCA20C551AF00CFCFE9 /* STSheetModel.m in Sources */,
 				003EDC0B20C5549F00CFCFE9 /* MainPage.m in Sources */,
+				003EDC3020C66C2800CFCFE9 /* InfoViewModel.m in Sources */,
+				003EDC2520C6619700CFCFE9 /* InfoDetailPage.m in Sources */,
+				003EDC1A20C6614400CFCFE9 /* InfoView.m in Sources */,
 				003EDBC820C551AF00CFCFE9 /* STTimeUtil.m in Sources */,
 				003EDBEA20C551AF00CFCFE9 /* STSwitchView.m in Sources */,
 				003EDBD220C551AF00CFCFE9 /* UITextField+Init.m in Sources */,
-				003EDBE320C551AF00CFCFE9 /* STDateLayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

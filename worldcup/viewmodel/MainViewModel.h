@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol MainViewDelegate
+
+
+@end
+
 @interface MainViewModel : NSObject
+
+@property(weak, nonatomic)id<MainViewDelegate> delegate;
+
+
 
 @end

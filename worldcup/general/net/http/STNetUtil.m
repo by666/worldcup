@@ -13,7 +13,7 @@
 
 @implementation STNetUtil
 
-+(void)get:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(RespondModel *))success failure:(void (^)(NSError *))failure{
++(void)get:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(id))success failure:(void (^)(NSError *))failure{
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -37,8 +37,7 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success){
             [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
-            RespondModel *model = [RespondModel mj_objectWithKeyValues:responseObject];
-            success(model);
+            success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (failure){
@@ -48,7 +47,7 @@
     }];
 }
 
-+ (void)post:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(RespondModel *))success failure:(void (^)(NSError *))failure{
++ (void)post:(NSString *)url parameters:(NSDictionary *)parameters success:(void (^)(id))success failure:(void (^)(NSError *))failure{
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -83,7 +82,7 @@
 }
 
 
-+(void)post:(NSString *)url content:(NSString *)content success:(void (^)(RespondModel *))success failure:(void (^)(NSError *))failure{
++(void)post:(NSString *)url content:(NSString *)content success:(void (^)(id))success failure:(void (^)(NSError *))failure{
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];

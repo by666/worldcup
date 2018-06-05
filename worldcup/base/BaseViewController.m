@@ -20,12 +20,14 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     [self hideNavigationBar:YES];
+    
 }
 
 
 -(void)hideNavigationBar : (Boolean) hidden{
     self.navigationController.navigationBarHidden = hidden;
 }
+
 
 
 -(void)setStatuBarBackgroud : (UIColor *)color{

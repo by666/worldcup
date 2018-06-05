@@ -14,4 +14,5 @@
 
 #define RootUrl @"https://www.baidu.com"
 #define TestUrl @"https://192.168.0.0"
+#define ScheduleUrl @"https://api.dongqiudi.com/data/tab/league/new/61?start=2018-05-3116:00&version=576&init=1&from=msite_com"
 
