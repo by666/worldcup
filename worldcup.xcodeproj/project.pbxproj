@@ -67,6 +67,8 @@
 		003EDC3020C66C2800CFCFE9 /* InfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC2F20C66C2800CFCFE9 /* InfoViewModel.m */; };
 		003EDC3320C66C3500CFCFE9 /* ScheduleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC3220C66C3500CFCFE9 /* ScheduleViewModel.m */; };
 		003EDC3720C6723300CFCFE9 /* ScheduleRespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC3620C6723300CFCFE9 /* ScheduleRespondModel.m */; };
+		003EDC3A20C781AF00CFCFE9 /* ScheduleTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC3920C781AF00CFCFE9 /* ScheduleTitleViewCell.m */; };
+		003EDC3E20C78C1C00CFCFE9 /* libUMessage_Sdk_1.5.0a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 003EDC3C20C78C1C00CFCFE9 /* libUMessage_Sdk_1.5.0a.a */; };
 		83707B895F078A657C64F156 /* Pods_worldcup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE5F5B46D5EA21EF0AD8E05 /* Pods_worldcup.framework */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +191,10 @@
 		003EDC3220C66C3500CFCFE9 /* ScheduleViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewModel.m; sourceTree = "<group>"; };
 		003EDC3520C6723300CFCFE9 /* ScheduleRespondModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleRespondModel.h; sourceTree = "<group>"; };
 		003EDC3620C6723300CFCFE9 /* ScheduleRespondModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleRespondModel.m; sourceTree = "<group>"; };
+		003EDC3820C781AF00CFCFE9 /* ScheduleTitleViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleTitleViewCell.h; sourceTree = "<group>"; };
+		003EDC3920C781AF00CFCFE9 /* ScheduleTitleViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleTitleViewCell.m; sourceTree = "<group>"; };
+		003EDC3C20C78C1C00CFCFE9 /* libUMessage_Sdk_1.5.0a.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.5.0a.a; sourceTree = "<group>"; };
+		003EDC3D20C78C1C00CFCFE9 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
 		0BE5F5B46D5EA21EF0AD8E05 /* Pods_worldcup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_worldcup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B663E8DAD9BB96CBB69816 /* Pods-worldcup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldcup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-worldcup/Pods-worldcup.debug.xcconfig"; sourceTree = "<group>"; };
 		F215627FF075B719AEDD0E1D /* Pods-worldcup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldcup.release.xcconfig"; path = "Pods/Target Support Files/Pods-worldcup/Pods-worldcup.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 				003EDC0820C5537600CFCFE9 /* SystemConfiguration.framework in Frameworks */,
 				003EDC0620C5537000CFCFE9 /* AssetsLibrary.framework in Frameworks */,
 				003EDC0420C5536600CFCFE9 /* QuartzCore.framework in Frameworks */,
+				003EDC3E20C78C1C00CFCFE9 /* libUMessage_Sdk_1.5.0a.a in Frameworks */,
 				003EDC0220C5536000CFCFE9 /* MobileCoreServices.framework in Frameworks */,
 				003EDC0020C5535800CFCFE9 /* Foundation.framework in Frameworks */,
 				003EDBFE20C5535200CFCFE9 /* libresolv.tbd in Frameworks */,
@@ -237,6 +244,7 @@
 		003EDB2220C5360E00CFCFE9 /* worldcup */ = {
 			isa = PBXGroup;
 			children = (
+				003EDC3B20C78C1C00CFCFE9 /* UMessage_Sdk_1.5.0a */,
 				003EDBEF20C5524500CFCFE9 /* page */,
 				003EDBED20C5523E00CFCFE9 /* view */,
 				003EDBEE20C5524200CFCFE9 /* model */,
@@ -540,6 +548,8 @@
 				003EDC1C20C6615300CFCFE9 /* ScheduleView.m */,
 				003EDC2B20C6694000CFCFE9 /* ScheduleViewCell.h */,
 				003EDC2C20C6694000CFCFE9 /* ScheduleViewCell.m */,
+				003EDC3820C781AF00CFCFE9 /* ScheduleTitleViewCell.h */,
+				003EDC3920C781AF00CFCFE9 /* ScheduleTitleViewCell.m */,
 			);
 			path = schedule;
 			sourceTree = "<group>";
@@ -578,6 +588,15 @@
 				003EDC3620C6723300CFCFE9 /* ScheduleRespondModel.m */,
 			);
 			path = schedule;
+			sourceTree = "<group>";
+		};
+		003EDC3B20C78C1C00CFCFE9 /* UMessage_Sdk_1.5.0a */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC3C20C78C1C00CFCFE9 /* libUMessage_Sdk_1.5.0a.a */,
+				003EDC3D20C78C1C00CFCFE9 /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.5.0a;
 			sourceTree = "<group>";
 		};
 		3E592FEA5C30DC9688CF0142 /* Frameworks */ = {
@@ -766,6 +785,7 @@
 				003EDBCB20C551AF00CFCFE9 /* STColorUtil.m in Sources */,
 				003EDBD320C551AF00CFCFE9 /* UIView+Frame.m in Sources */,
 				003EDC3720C6723300CFCFE9 /* ScheduleRespondModel.m in Sources */,
+				003EDC3A20C781AF00CFCFE9 /* ScheduleTitleViewCell.m in Sources */,
 				003EDBC520C551AF00CFCFE9 /* STUpdateUtil.m in Sources */,
 				003EDBE620C551AF00CFCFE9 /* STNavigationView.m in Sources */,
 				003EDC3320C66C3500CFCFE9 /* ScheduleViewModel.m in Sources */,
@@ -907,6 +927,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/worldcup/UMessage_Sdk_1.5.0a",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scrat.worldcup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -926,6 +950,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/worldcup/UMessage_Sdk_1.5.0a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scrat.worldcup;
 				PRODUCT_NAME = "$(TARGET_NAME)";

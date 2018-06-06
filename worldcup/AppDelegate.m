@@ -14,7 +14,8 @@
 #import "STObserverManager.h"
 #import "AFNetworkActivityIndicatorManager.h"
 #import "STUpdateUtil.h"
-
+#import "UMessage.h"
+#import "UMMobClick/MobClick.h"
 
 @interface AppDelegate ()
 
@@ -34,9 +35,12 @@
     
     [[STObserverManager sharedSTObserverManager]setup];
     [self initNet];
+    [self initUmeng];
+    [self initAdmob];
     [STUpdateUtil checkUpdate:^(NSString *appname, NSString *url, double version) {
         //        [self showUpdateAlert:url version:version];
     }];
+    
 
     
     
@@ -44,16 +48,24 @@
 }
 
 
-
-
-
-
-
 -(void)initNet{
     NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
     [NSURLCache setSharedURLCache:URLCache];
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     
+}
+
+-(void)initUmeng{
+    UMConfigInstance.appKey = UMENG_APPKEY;
+    UMConfigInstance.channelId = CHANNELCODE;
+    [MobClick startWithConfigure:UMConfigInstance];
+}
+
+-(void)initAdmob{
+    [GADMobileAds configureWithApplicationID:ADMOB_APPID];
+    
+    GADRequest *request = [GADRequest request];
+    request.testDevices = @[ @"a046e84d7e0211e877a2eb9fbb805669dddd972a"];
 }
 
 #pragma mark 系统自带回调

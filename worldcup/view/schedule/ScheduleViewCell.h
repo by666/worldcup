@@ -9,14 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ScheduleViewModel.h"
 
-#define TITLE_HEIGHT STHeight(30)
-#define CONTENT_HEIGHT STHeight(120)
+
 
 
 @interface ScheduleViewCell : UITableViewCell
 
--(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier viewModel:(ScheduleViewModel *)viewModel;
--(void)updateData:(NSArray *)datas row:(NSInteger)row;
+-(void)updateData:(ScheduleModel *)model;
 +(NSString *)identify;
 
 @end

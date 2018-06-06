@@ -31,6 +31,7 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "NSString+Extension.h"
 #import "UIImageView+WebCache.h"
+@import GoogleMobileAds;
 
 
 
@@ -84,3 +85,5 @@
 #endif /* STPrefixHeader_pch */
 
 
+#define TITLE_HEIGHT STHeight(30)
+#define CONTENT_HEIGHT STHeight(120)

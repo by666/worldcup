@@ -47,23 +47,23 @@
 }
 
 -(void)showSTNavigationBar:(NSString *)title needback:(Boolean)needback{
-    STNavigationView *navigationView = [[STNavigationView alloc]initWithTitle:title needBack:needback];
-    navigationView.delegate = self;
-    [self.view addSubview:navigationView];
+    _navigationView = [[STNavigationView alloc]initWithTitle:title needBack:needback];
+    _navigationView.delegate = self;
+    [self.view addSubview:_navigationView];
 }
 
 -(void)showSTNavigationBar:(NSString *)title needback:(Boolean)needback rightBtn:(NSString *)rightStr block:(void (^)(void))click{
     _onRightBtnClick = click;
-    STNavigationView *navigationView = [[STNavigationView alloc]initWithTitle:title needBack:needback rightBtn:rightStr];
-    navigationView.delegate = self;
-    [self.view addSubview:navigationView];
+    _navigationView = [[STNavigationView alloc]initWithTitle:title needBack:needback rightBtn:rightStr];
+    _navigationView.delegate = self;
+    [self.view addSubview:_navigationView];
 }
 
 -(void)showSTNavigationBar:(NSString *)title needback:(Boolean)needback rightBtn:(NSString *)rightStr rightColor:(UIColor *)color block:(void (^)(void))click{
     _onRightBtnClick = click;
-    STNavigationView *navigationView = [[STNavigationView alloc]initWithTitle:title needBack:needback rightBtn:rightStr rightColor:color];
-    navigationView.delegate = self;
-    [self.view addSubview:navigationView];
+    _navigationView = [[STNavigationView alloc]initWithTitle:title needBack:needback rightBtn:rightStr rightColor:color];
+    _navigationView.delegate = self;
+    [self.view addSubview:_navigationView];
 }
 
 -(void)OnBackBtnClicked{

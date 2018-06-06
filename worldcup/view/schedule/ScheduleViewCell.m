@@ -10,106 +10,96 @@
 #import "UIImageView+WebCache.h"
 @interface ScheduleViewCell()
 
-@property(strong, nonatomic)UILabel *dateLabel;
-@property(strong, nonatomic)ScheduleViewModel *mViewModel;
+@property(strong, nonatomic)UILabel *timeLabel;
+@property(strong, nonatomic)UILabel *vsLabel;
+@property(strong, nonatomic)UILabel *statuLabel;
+@property(strong, nonatomic)UIImageView *aImageView;
+@property(strong, nonatomic)UIImageView *bImageView;
+@property(strong, nonatomic)UILabel *aNameLabel;
+@property(strong, nonatomic)UILabel *bNameLabel;
+@property(strong, nonatomic)UIView *lineView;
 
 @end
 
 @implementation ScheduleViewCell
 
--(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier viewModel:(ScheduleViewModel *)viewModel{
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if(self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
-        _mViewModel = viewModel;
         [self initView];
     }
     return self;
 }
 
 -(void)initView{
-    UIView *topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, TITLE_HEIGHT)];
-    topView.backgroundColor = c02;
-    [self.contentView addSubview:topView];
+    _timeLabel = [[UILabel alloc]initWithFont:STFont(14) text:@"" textAlignment:NSTextAlignmentCenter textColor:c06 backgroundColor:nil multiLine:NO];
+    _timeLabel.frame = CGRectMake(0, STHeight(20), ScreenWidth, STHeight(14));
+    [self.contentView addSubview:_timeLabel];
     
-    _dateLabel = [[UILabel alloc]initWithFont:STFont(14) text:@"" textAlignment:NSTextAlignmentCenter textColor:c06 backgroundColor:nil multiLine:NO];
-    [topView addSubview:_dateLabel];
+    _vsLabel = [[UILabel alloc]initWithFont:STFont(26) text:@"VS" textAlignment:NSTextAlignmentCenter textColor:cblack backgroundColor:nil multiLine:NO];
+    _vsLabel.frame = CGRectMake(0, STHeight(47), ScreenWidth, STHeight(26));
+    [self.contentView addSubview:_vsLabel];
     
-}
-
-
--(void)updateData:(NSArray *)datas row:(NSInteger)row{
-    ScheduleModel *model = [datas objectAtIndex:0];
-    _dateLabel.text = model.date_utc;
-    CGSize timeSize = [_dateLabel.text sizeWithMaxWidth:ScreenWidth font:[UIFont systemFontOfSize:STFont(14)]];
-    _dateLabel.frame = CGRectMake(STWidth(15), 0, timeSize.width, TITLE_HEIGHT);
-    
-    @synchronized(self){
-        for(int i = 0; i < [datas count]; i ++){
-            ScheduleModel *model = [datas objectAtIndex:i];
-            UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, TITLE_HEIGHT + i * CONTENT_HEIGHT, ScreenWidth, CONTENT_HEIGHT)];
-            button.backgroundColor = cwhite;
-            button.tag = row;
-            button.tag2 = [NSString stringWithFormat:@"%d",i];
-            [button addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
-            [self.contentView addSubview:button];
-            
-            if(i + 1  < [datas count]){
-                UIView *lineView = [[UIView alloc]initWithFrame:CGRectMake(0, (i+1) * CONTENT_HEIGHT + TITLE_HEIGHT-LineHeight, ScreenWidth, LineHeight)];
-                lineView.backgroundColor = c07;
-                [self.contentView addSubview:lineView];
-            }
-            
-            [self fillInBtn:button model:model];
-        }
-    }
-}
-
-
-
--(void)fillInBtn:(UIButton *)button model:(ScheduleModel *)model{
-    UILabel *timeLabel = [[UILabel alloc]initWithFont:STFont(14) text:[model.time_utc substringWithRange:NSMakeRange(0, 5)] textAlignment:NSTextAlignmentCenter textColor:c06 backgroundColor:nil multiLine:NO];
-    timeLabel.frame = CGRectMake(0, STHeight(20), ScreenWidth, STHeight(14));
-    [button addSubview:timeLabel];
-    
-    UILabel *vsLabel = [[UILabel alloc]initWithFont:STFont(26) text:@"VS" textAlignment:NSTextAlignmentCenter textColor:cblack backgroundColor:nil multiLine:NO];
-    vsLabel.frame = CGRectMake(0, STHeight(47), ScreenWidth, STHeight(26));
-    [button addSubview:vsLabel];
-    
-    UILabel *statuLabel = [[UILabel alloc]initWithFont:STFont(12) text:model.TVList textAlignment:NSTextAlignmentCenter textColor:c07 backgroundColor:nil multiLine:NO];
-    statuLabel.frame = CGRectMake(0, STHeight(85), ScreenWidth, STHeight(12));
-    [button addSubview:statuLabel];
+    _statuLabel = [[UILabel alloc]initWithFont:STFont(12) text:@"" textAlignment:NSTextAlignmentCenter textColor:c07 backgroundColor:nil multiLine:NO];
+    _statuLabel.frame = CGRectMake(0, STHeight(85), ScreenWidth, STHeight(12));
+    [self.contentView addSubview:_statuLabel];
     
     
     CGFloat imageWidth = STHeight(40);
-    UIImageView *aImageView = [[UIImageView alloc]initWithFrame:CGRectMake((ScreenWidth / 2 - imageWidth ) /2, STHeight(30), imageWidth, imageWidth)];
-    aImageView.contentMode = UIViewContentModeScaleAspectFill;
-    [aImageView sd_setImageWithURL:[NSURL URLWithString:model.team_A_logo]];
-    [button addSubview:aImageView];
+    _aImageView = [[UIImageView alloc]initWithFrame:CGRectMake((ScreenWidth / 2 - imageWidth ) /2, STHeight(30), imageWidth, imageWidth)];
+    _aImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.contentView addSubview:_aImageView];
     
-    UIImageView *bImageView = [[UIImageView alloc]initWithFrame:CGRectMake((ScreenWidth / 2 - imageWidth ) /2 + ScreenWidth / 2, STHeight(30), imageWidth, imageWidth)];
-    bImageView.contentMode = UIViewContentModeScaleAspectFill;
-    [bImageView sd_setImageWithURL:[NSURL URLWithString:model.team_B_logo]];
-    [button addSubview:bImageView];
+    _bImageView = [[UIImageView alloc]initWithFrame:CGRectMake((ScreenWidth / 2 - imageWidth ) /2 + ScreenWidth / 2, STHeight(30), imageWidth, imageWidth)];
+    _bImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.contentView addSubview:_bImageView];
     
     
-    UILabel *aNameLabel = [[UILabel alloc]initWithFont:STFont(14) text:model.team_A_name textAlignment:NSTextAlignmentCenter textColor:c06 backgroundColor:nil multiLine:NO];
-    aNameLabel.textAlignment = NSTextAlignmentCenter;
-    aNameLabel.frame = CGRectMake(0, STHeight(80), ScreenWidth/2, STHeight(14));
-    [button addSubview:aNameLabel];
+    _aNameLabel = [[UILabel alloc]initWithFont:STFont(14) text:@"" textAlignment:NSTextAlignmentCenter textColor:c06 backgroundColor:nil multiLine:YES];
+    _aNameLabel.textAlignment = NSTextAlignmentCenter;
+    [self.contentView addSubview:_aNameLabel];
     
-    UILabel *bNameLabel = [[UILabel alloc]initWithFont:STFont(14) text:model.team_B_name textAlignment:NSTextAlignmentCenter textColor:c06 backgroundColor:nil multiLine:NO];
-    bNameLabel.textAlignment = NSTextAlignmentCenter;
-    bNameLabel.frame = CGRectMake(ScreenWidth/2, STHeight(80), ScreenWidth/2, STHeight(14));
-    [button addSubview:bNameLabel];
-
+    _bNameLabel = [[UILabel alloc]initWithFont:STFont(14) text:@"" textAlignment:NSTextAlignmentCenter textColor:c06 backgroundColor:nil multiLine:YES];
+    _bNameLabel.textAlignment = NSTextAlignmentCenter;
+    _bNameLabel.frame = CGRectMake(ScreenWidth/2, STHeight(80), ScreenWidth/2, STHeight(14));
+    [self.contentView addSubview:_bNameLabel];
+    
+    _lineView = [[UIView alloc]init];
+    _lineView.frame = CGRectMake(0, CONTENT_HEIGHT - LineHeight, ScreenWidth, LineHeight);
+    _lineView.backgroundColor = c07;
+    [self.contentView addSubview:_lineView];
+    
 }
 
--(void)onClick:(id)sender{
-    UIButton *button = sender;
-    [STLog print:[NSString stringWithFormat:@"第%ld组数据",button.tag] content:[NSString stringWithFormat:@"第%@个",button.tag2]];
-    if(_mViewModel){
-        [_mViewModel goScheduleDetailPage:button.tag row:[button.tag2 integerValue]];
+
+-(void)updateData:(ScheduleModel *)model{
+    _timeLabel.text = [model.time_utc substringWithRange:NSMakeRange(0, 5)];
+    _statuLabel.text = model.TVList;
+    if(IS_NS_STRING_EMPTY(model.team_A_logo)){
+        model.team_A_logo = @"https://img.dongqiudi.com//soccer//data//logo//team//team_default.png";
+    }
+    if(IS_NS_STRING_EMPTY(model.team_B_logo)){
+        model.team_B_logo = @"https://img.dongqiudi.com//soccer//data//logo//team//team_default.png";
+    }
+    [_aImageView sd_setImageWithURL:[NSURL URLWithString:model.team_A_logo]];
+    [_bImageView sd_setImageWithURL:[NSURL URLWithString:model.team_B_logo]];
+    _aNameLabel.text = model.team_A_name;
+    CGSize aSize = [_aNameLabel.text sizeWithMaxWidth:ScreenWidth/4 font:[UIFont systemFontOfSize:STFont(14)]];
+    _aNameLabel.frame = CGRectMake((ScreenWidth/2 - ScreenWidth / 4)/2, STHeight(80), ScreenWidth/4, aSize.height);
+
+    _bNameLabel.text = model.team_B_name;
+    CGSize bSize = [_bNameLabel.text sizeWithMaxWidth:ScreenWidth/4 font:[UIFont systemFontOfSize:STFont(14)]];
+    _bNameLabel.frame = CGRectMake((ScreenWidth/2 - ScreenWidth / 4)/2 + ScreenWidth/2, STHeight(80), ScreenWidth/4, bSize.height);
+    
+    if(model.hasLine){
+        _lineView.hidden = NO;
+    }else{
+        _lineView.hidden = YES;
     }
 }
+
+
+
+
 
 +(NSString *)identify{
     return NSStringFromClass([ScheduleViewCell class]);

@@ -9,6 +9,8 @@
 #import "STNavigationView.h"
 @interface BaseViewController : UIViewController
 
+@property(strong, nonatomic)STNavigationView *navigationView;
+
 //隐藏导航栏
 -(void)hideNavigationBar : (Boolean) hidden;
 

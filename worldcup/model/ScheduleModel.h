@@ -51,6 +51,9 @@
 @property(copy, nonatomic)NSString *as_A;
 @property(copy, nonatomic)NSString *as_B;
 @property(assign, nonatomic)long intermission;
+@property(assign, nonatomic)Boolean isTitle;
+@property(assign, nonatomic)Boolean hasLine;
+
 
 
 @end

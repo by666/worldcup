@@ -10,6 +10,7 @@
 
 @protocol MainViewDelegate
 
+-(void)onChangeTab:(NSInteger)index;
 
 @end
 
@@ -17,6 +18,7 @@
 
 @property(weak, nonatomic)id<MainViewDelegate> delegate;
 
+-(void)changeTab:(NSInteger)index;
 
 
 @end

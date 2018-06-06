@@ -11,4 +11,9 @@
 @implementation MainViewModel
 
 
+-(void)changeTab:(NSInteger)index{
+    if(_delegate){
+        [_delegate onChangeTab:index];
+    }
+}
 @end

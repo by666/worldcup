@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "worldcup/view/schedule/ScheduleViewCell.m"
-            timestampString = "549887781.280561"
+            filePath = "worldcup/view/schedule/ScheduleTitleViewCell.m"
+            timestampString = "549959889.178584"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "-onClick:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "worldcup/viewmodel/ScheduleViewModel.m"
-            timestampString = "549887781.2806261"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "-countTableViewHeight:"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-updateData:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

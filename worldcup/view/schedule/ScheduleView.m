@@ -8,6 +8,7 @@
 
 #import "ScheduleView.h"
 #import "ScheduleViewCell.h"
+#import "ScheduleTitleViewCell.h"
 
 @interface ScheduleView()<UITableViewDataSource,UITableViewDelegate>
 
@@ -64,13 +65,17 @@
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [_mViewModel.sortDatas count];
+    return [_mViewModel.datas count];
 }
 
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSArray *datas = [_mViewModel.sortDatas objectAtIndex:indexPath.row];
-    return ([datas count] * CONTENT_HEIGHT) + TITLE_HEIGHT;
+    ScheduleModel *model = [_mViewModel.datas objectAtIndex:indexPath.row];
+    if(model.isTitle){
+        return TITLE_HEIGHT;
+    }else{
+        return CONTENT_HEIGHT;
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -79,16 +84,32 @@
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ScheduleViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[ScheduleViewCell identify]];
-    if(!cell){
-        cell = [[ScheduleViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[ScheduleViewCell identify] viewModel:_mViewModel];
+    ScheduleModel *model = [_mViewModel.datas objectAtIndex:indexPath.row];
+    id cell;
+    if(model.isTitle){
+        cell = [tableView dequeueReusableCellWithIdentifier:[ScheduleTitleViewCell identify]];
+        if(!cell){
+            cell = [[ScheduleTitleViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[ScheduleTitleViewCell identify]];
+        }
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        [cell updateData:model];
     }
-    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    if(_mViewModel && !IS_NS_COLLECTION_EMPTY(_mViewModel.sortDatas)){
-        NSInteger row = indexPath.row;
-        [cell updateData:[_mViewModel.sortDatas objectAtIndex:row] row:row];
+    else{
+        cell = [tableView dequeueReusableCellWithIdentifier:[ScheduleViewCell identify]];
+        if(!cell){
+            cell = [[ScheduleViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[ScheduleViewCell identify]];
+        }
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        [cell updateData:model];
     }
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ScheduleModel *model = [_mViewModel.datas objectAtIndex:indexPath.row];
+    if(!model.isTitle && _mViewModel){
+        [_mViewModel goScheduleDetailPage:model];
+    }
 }
 
 

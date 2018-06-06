@@ -19,12 +19,11 @@
 @interface ScheduleViewModel : NSObject
 @property(weak, nonatomic)id<ScheduleViewModelDelegate> delegate;
 @property(strong, nonatomic)NSMutableArray *datas;
-@property(strong, nonatomic)NSMutableArray *sortDatas;
 @property(assign, nonatomic)CGFloat height;
 
 -(void)requestNew;
 -(void)requestMore;
--(void)goScheduleDetailPage:(NSInteger)index row:(NSInteger)row;
+-(void)goScheduleDetailPage:(ScheduleModel *)model;
 
 
 @end
