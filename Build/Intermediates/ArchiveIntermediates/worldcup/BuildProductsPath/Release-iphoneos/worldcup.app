@@ -1,0 +1,1 @@
+/Users/by.huang/Desktop/worldcup/Build/Intermediates/ArchiveIntermediates/worldcup/InstallationBuildProductsLocation/Applications/worldcup.app
