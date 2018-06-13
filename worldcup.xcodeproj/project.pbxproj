@@ -11,8 +11,6 @@
 		0038F17720CE294800094EB9 /* ScheduleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F16820CE294800094EB9 /* ScheduleView.m */; };
 		0038F17820CE294800094EB9 /* ScheduleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F16A20CE294800094EB9 /* ScheduleViewCell.m */; };
 		0038F17920CE294800094EB9 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F16D20CE294800094EB9 /* InfoView.m */; };
-		0038F17A20CE294800094EB9 /* ScheduleDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F17020CE294800094EB9 /* ScheduleDetailView.m */; };
-		0038F17B20CE294800094EB9 /* ScheduleDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F17220CE294800094EB9 /* ScheduleDetailViewCell.m */; };
 		0038F17C20CE294800094EB9 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F17520CE294800094EB9 /* MainView.m */; };
 		0038F18620CE295C00094EB9 /* InfoDetailPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F17F20CE295C00094EB9 /* InfoDetailPage.m */; };
 		0038F18720CE295C00094EB9 /* MainPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F18220CE295C00094EB9 /* MainPage.m */; };
@@ -20,9 +18,6 @@
 		0038F19620CE298600094EB9 /* RespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F18B20CE298500094EB9 /* RespondModel.m */; };
 		0038F19720CE298600094EB9 /* ScheduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F18E20CE298500094EB9 /* ScheduleModel.m */; };
 		0038F19820CE298600094EB9 /* ScheduleRespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F19020CE298500094EB9 /* ScheduleRespondModel.m */; };
-		0038F19920CE298600094EB9 /* ScheduleDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F19320CE298600094EB9 /* ScheduleDetailModel.m */; };
-		0038F19A20CE298600094EB9 /* ScheduleDetailResondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F19520CE298600094EB9 /* ScheduleDetailResondModel.m */; };
-		0038F1A720CE29AC00094EB9 /* ScheduleDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F19D20CE29AC00094EB9 /* ScheduleDetailViewModel.m */; };
 		0038F1A820CE29AC00094EB9 /* InfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F1A020CE29AC00094EB9 /* InfoViewModel.m */; };
 		0038F1A920CE29AC00094EB9 /* ScheduleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F1A320CE29AC00094EB9 /* ScheduleViewModel.m */; };
 		0038F1AA20CE29AC00094EB9 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0038F1A620CE29AC00094EB9 /* MainViewModel.m */; };
@@ -44,7 +39,6 @@
 		003EDBC720C551AF00CFCFE9 /* STSoundUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB6920C551AF00CFCFE9 /* STSoundUtil.m */; };
 		003EDBC820C551AF00CFCFE9 /* STTimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB6C20C551AF00CFCFE9 /* STTimeUtil.m */; };
 		003EDBC920C551AF00CFCFE9 /* STAlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB7020C551AF00CFCFE9 /* STAlertUtil.m */; };
-		003EDBCA20C551AF00CFCFE9 /* STSheetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB7220C551AF00CFCFE9 /* STSheetModel.m */; };
 		003EDBCB20C551AF00CFCFE9 /* STColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB7420C551AF00CFCFE9 /* STColorUtil.m */; };
 		003EDBCC20C551AF00CFCFE9 /* STPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB7620C551AF00CFCFE9 /* STPUtil.m */; };
 		003EDBCD20C551AF00CFCFE9 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDB7A20C551AF00CFCFE9 /* NSString+Extension.m */; };
@@ -92,10 +86,6 @@
 		0038F16A20CE294800094EB9 /* ScheduleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewCell.m; sourceTree = "<group>"; };
 		0038F16C20CE294800094EB9 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
 		0038F16D20CE294800094EB9 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
-		0038F16F20CE294800094EB9 /* ScheduleDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailView.h; sourceTree = "<group>"; };
-		0038F17020CE294800094EB9 /* ScheduleDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailView.m; sourceTree = "<group>"; };
-		0038F17120CE294800094EB9 /* ScheduleDetailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailViewCell.h; sourceTree = "<group>"; };
-		0038F17220CE294800094EB9 /* ScheduleDetailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailViewCell.m; sourceTree = "<group>"; };
 		0038F17420CE294800094EB9 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		0038F17520CE294800094EB9 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		0038F17E20CE295C00094EB9 /* InfoDetailPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoDetailPage.h; sourceTree = "<group>"; };
@@ -110,12 +100,6 @@
 		0038F18E20CE298500094EB9 /* ScheduleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleModel.m; sourceTree = "<group>"; };
 		0038F18F20CE298500094EB9 /* ScheduleRespondModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleRespondModel.h; sourceTree = "<group>"; };
 		0038F19020CE298500094EB9 /* ScheduleRespondModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleRespondModel.m; sourceTree = "<group>"; };
-		0038F19220CE298600094EB9 /* ScheduleDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailModel.h; sourceTree = "<group>"; };
-		0038F19320CE298600094EB9 /* ScheduleDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailModel.m; sourceTree = "<group>"; };
-		0038F19420CE298600094EB9 /* ScheduleDetailResondModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailResondModel.h; sourceTree = "<group>"; };
-		0038F19520CE298600094EB9 /* ScheduleDetailResondModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailResondModel.m; sourceTree = "<group>"; };
-		0038F19C20CE29AC00094EB9 /* ScheduleDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailViewModel.h; sourceTree = "<group>"; };
-		0038F19D20CE29AC00094EB9 /* ScheduleDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailViewModel.m; sourceTree = "<group>"; };
 		0038F19F20CE29AC00094EB9 /* InfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewModel.h; sourceTree = "<group>"; };
 		0038F1A020CE29AC00094EB9 /* InfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewModel.m; sourceTree = "<group>"; };
 		0038F1A220CE29AC00094EB9 /* ScheduleViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewModel.h; sourceTree = "<group>"; };
@@ -278,17 +262,6 @@
 			path = info;
 			sourceTree = "<group>";
 		};
-		0038F16E20CE294800094EB9 /* shcduledetail */ = {
-			isa = PBXGroup;
-			children = (
-				0038F16F20CE294800094EB9 /* ScheduleDetailView.h */,
-				0038F17020CE294800094EB9 /* ScheduleDetailView.m */,
-				0038F17120CE294800094EB9 /* ScheduleDetailViewCell.h */,
-				0038F17220CE294800094EB9 /* ScheduleDetailViewCell.m */,
-			);
-			path = shcduledetail;
-			sourceTree = "<group>";
-		};
 		0038F17320CE294800094EB9 /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,26 +316,6 @@
 				0038F19020CE298500094EB9 /* ScheduleRespondModel.m */,
 			);
 			path = schedule;
-			sourceTree = "<group>";
-		};
-		0038F19120CE298600094EB9 /* scheduledetail */ = {
-			isa = PBXGroup;
-			children = (
-				0038F19220CE298600094EB9 /* ScheduleDetailModel.h */,
-				0038F19320CE298600094EB9 /* ScheduleDetailModel.m */,
-				0038F19420CE298600094EB9 /* ScheduleDetailResondModel.h */,
-				0038F19520CE298600094EB9 /* ScheduleDetailResondModel.m */,
-			);
-			path = scheduledetail;
-			sourceTree = "<group>";
-		};
-		0038F19B20CE29AC00094EB9 /* schduledetail */ = {
-			isa = PBXGroup;
-			children = (
-				0038F19C20CE29AC00094EB9 /* ScheduleDetailViewModel.h */,
-				0038F19D20CE29AC00094EB9 /* ScheduleDetailViewModel.m */,
-			);
-			path = schduledetail;
 			sourceTree = "<group>";
 		};
 		0038F19E20CE29AC00094EB9 /* info */ = {
@@ -513,7 +466,6 @@
 			isa = PBXGroup;
 			children = (
 				003EDB5D20C551AF00CFCFE9 /* http */,
-				003EDB6220C551AF00CFCFE9 /* socket */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -527,13 +479,6 @@
 				003EDB6120C551AF00CFCFE9 /* STUpdateUtil.m */,
 			);
 			path = http;
-			sourceTree = "<group>";
-		};
-		003EDB6220C551AF00CFCFE9 /* socket */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = socket;
 			sourceTree = "<group>";
 		};
 		003EDB6320C551AF00CFCFE9 /* runtime */ = {
@@ -644,17 +589,10 @@
 		003EDBED20C5523E00CFCFE9 /* view */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				CF43E40220CD81E90069AAFA /* shcduledetail */,
-				003EDC1E20C6615E00CFCFE9 /* main */,
-				003EDC1F20C6616600CFCFE9 /* info */,
-				003EDC2020C6616A00CFCFE9 /* schedule */,
-=======
 				0038F16B20CE294800094EB9 /* info */,
 				0038F17320CE294800094EB9 /* main */,
 				0038F16420CE294800094EB9 /* schedule */,
-				0038F16E20CE294800094EB9 /* shcduledetail */,
->>>>>>> origin/master
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -662,16 +600,9 @@
 		003EDBEE20C5524200CFCFE9 /* model */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				CF43E40720CD82330069AAFA /* info */,
 				CF43E40120CD81DE0069AAFA /* scheduledetail */,
-				003EDC3420C6721600CFCFE9 /* schedule */,
-				003EDBF120C5527100CFCFE9 /* net */,
-=======
 				0038F18920CE298500094EB9 /* net */,
 				0038F18C20CE298500094EB9 /* schedule */,
-				0038F19120CE298600094EB9 /* scheduledetail */,
->>>>>>> origin/master
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -679,15 +610,9 @@
 		003EDBEF20C5524500CFCFE9 /* page */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				003EDC2620C6619900CFCFE9 /* scheduledetail */,
-				003EDC2220C6618500CFCFE9 /* info */,
-				003EDC2120C6617E00CFCFE9 /* main */,
-=======
 				0038F17D20CE295C00094EB9 /* info */,
 				0038F18020CE295C00094EB9 /* main */,
 				0038F18320CE295C00094EB9 /* scheduledetail */,
->>>>>>> origin/master
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -695,102 +620,14 @@
 		003EDBF020C5524B00CFCFE9 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				CF43E40620CD82290069AAFA /* info */,
 				CF43E40520CD821C0069AAFA /* schduledetail */,
-				CF43E40420CD82120069AAFA /* schudule */,
-				CF43E40320CD82030069AAFA /* main */,
-=======
 				0038F19E20CE29AC00094EB9 /* info */,
 				0038F1A420CE29AC00094EB9 /* main */,
-				0038F19B20CE29AC00094EB9 /* schduledetail */,
 				0038F1A120CE29AC00094EB9 /* schudule */,
->>>>>>> origin/master
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		003EDBF120C5527100CFCFE9 /* net */ = {
-			isa = PBXGroup;
-			children = (
-				003EDBF220C5528A00CFCFE9 /* RespondModel.h */,
-				003EDBF320C5528A00CFCFE9 /* RespondModel.m */,
-			);
-			path = net;
-			sourceTree = "<group>";
-		};
-		003EDC1E20C6615E00CFCFE9 /* main */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC0C20C5556A00CFCFE9 /* MainView.h */,
-				003EDC0D20C5556A00CFCFE9 /* MainView.m */,
-			);
-			path = main;
-			sourceTree = "<group>";
-		};
-		003EDC1F20C6616600CFCFE9 /* info */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC1820C6614400CFCFE9 /* InfoView.h */,
-				003EDC1920C6614400CFCFE9 /* InfoView.m */,
-			);
-			path = info;
-			sourceTree = "<group>";
-		};
-		003EDC2020C6616A00CFCFE9 /* schedule */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC1B20C6615300CFCFE9 /* ScheduleView.h */,
-				003EDC1C20C6615300CFCFE9 /* ScheduleView.m */,
-				003EDC2B20C6694000CFCFE9 /* ScheduleViewCell.h */,
-				003EDC2C20C6694000CFCFE9 /* ScheduleViewCell.m */,
-				003EDC3820C781AF00CFCFE9 /* ScheduleTitleViewCell.h */,
-				003EDC3920C781AF00CFCFE9 /* ScheduleTitleViewCell.m */,
-			);
-			path = schedule;
-			sourceTree = "<group>";
-		};
-		003EDC2120C6617E00CFCFE9 /* main */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC0920C5549F00CFCFE9 /* MainPage.h */,
-				003EDC0A20C5549F00CFCFE9 /* MainPage.m */,
-			);
-			path = main;
-			sourceTree = "<group>";
-		};
-		003EDC2220C6618500CFCFE9 /* info */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC2320C6619700CFCFE9 /* InfoDetailPage.h */,
-				003EDC2420C6619700CFCFE9 /* InfoDetailPage.m */,
-			);
-			path = info;
-			sourceTree = "<group>";
-		};
-		003EDC2620C6619900CFCFE9 /* scheduledetail */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC2820C661B500CFCFE9 /* ScheduleDetailPage.h */,
-				003EDC2920C661B500CFCFE9 /* ScheduleDetailPage.m */,
-			);
-			path = scheduledetail;
-			sourceTree = "<group>";
-		};
-		003EDC3420C6721600CFCFE9 /* schedule */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC1220C62CF100CFCFE9 /* ScheduleModel.h */,
-				003EDC1320C62CF100CFCFE9 /* ScheduleModel.m */,
-				003EDC3520C6723300CFCFE9 /* ScheduleRespondModel.h */,
-				003EDC3620C6723300CFCFE9 /* ScheduleRespondModel.m */,
-			);
-			path = schedule;
-			sourceTree = "<group>";
-		};
-=======
->>>>>>> origin/master
 		003EDC3B20C78C1C00CFCFE9 /* UMessage_Sdk_1.5.0a */ = {
 			isa = PBXGroup;
 			children = (
@@ -849,24 +686,6 @@
 			path = shcduledetail;
 			sourceTree = "<group>";
 		};
-		CF43E40320CD82030069AAFA /* main */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC0F20C5557500CFCFE9 /* MainViewModel.h */,
-				003EDC1020C5557500CFCFE9 /* MainViewModel.m */,
-			);
-			path = main;
-			sourceTree = "<group>";
-		};
-		CF43E40420CD82120069AAFA /* schudule */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC3120C66C3500CFCFE9 /* ScheduleViewModel.h */,
-				003EDC3220C66C3500CFCFE9 /* ScheduleViewModel.m */,
-			);
-			path = schudule;
-			sourceTree = "<group>";
-		};
 		CF43E40520CD821C0069AAFA /* schduledetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -874,22 +693,6 @@
 				CF43E3FF20CD26710069AAFA /* ScheduleDetailViewModel.m */,
 			);
 			path = schduledetail;
-			sourceTree = "<group>";
-		};
-		CF43E40620CD82290069AAFA /* info */ = {
-			isa = PBXGroup;
-			children = (
-				003EDC2E20C66C2800CFCFE9 /* InfoViewModel.h */,
-				003EDC2F20C66C2800CFCFE9 /* InfoViewModel.m */,
-			);
-			path = info;
-			sourceTree = "<group>";
-		};
-		CF43E40720CD82330069AAFA /* info */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1031,11 +834,8 @@
 				003EDBC420C551AF00CFCFE9 /* STNetUtil.m in Sources */,
 				003EDB3320C5361700CFCFE9 /* main.m in Sources */,
 				003EDBE420C551AF00CFCFE9 /* STEdgeLabel.m in Sources */,
-<<<<<<< HEAD
 				CF43E41320CD90BC0069AAFA /* ScheduleDetailViewCell.m in Sources */,
-=======
 				0038F18620CE295C00094EB9 /* InfoDetailPage.m in Sources */,
->>>>>>> origin/master
 				003EDBC920C551AF00CFCFE9 /* STAlertUtil.m in Sources */,
 				0038F18720CE295C00094EB9 /* MainPage.m in Sources */,
 				003EDBE520C551AF00CFCFE9 /* STLayerView.m in Sources */,
@@ -1048,17 +848,10 @@
 				0038F17820CE294800094EB9 /* ScheduleViewCell.m in Sources */,
 				003EDB2520C5360E00CFCFE9 /* AppDelegate.m in Sources */,
 				003EDBBD20C551AF00CFCFE9 /* STConvertUtil.m in Sources */,
-				0038F19920CE298600094EB9 /* ScheduleDetailModel.m in Sources */,
 				003EDBCD20C551AF00CFCFE9 /* NSString+Extension.m in Sources */,
-				0038F19A20CE298600094EB9 /* ScheduleDetailResondModel.m in Sources */,
 				0038F1AA20CE29AC00094EB9 /* MainViewModel.m in Sources */,
-				0038F17A20CE294800094EB9 /* ScheduleDetailView.m in Sources */,
 				003EDBDC20C551AF00CFCFE9 /* CircularProgressView.m in Sources */,
-<<<<<<< HEAD
 				CF43E40D20CD828E0069AAFA /* ScheduleDetailModel.m in Sources */,
-				003EDBF420C5528A00CFCFE9 /* RespondModel.m in Sources */,
-=======
->>>>>>> origin/master
 				003EDBE720C551AF00CFCFE9 /* STRefreshTableView.m in Sources */,
 				003EDBCC20C551AF00CFCFE9 /* STPUtil.m in Sources */,
 				003EDBBE20C551AF00CFCFE9 /* STObserver.m in Sources */,
@@ -1066,7 +859,6 @@
 				003EDBD020C551AF00CFCFE9 /* UILabel+Init.m in Sources */,
 				003EDBC720C551AF00CFCFE9 /* STSoundUtil.m in Sources */,
 				0038F19820CE298600094EB9 /* ScheduleRespondModel.m in Sources */,
-				0038F1A720CE29AC00094EB9 /* ScheduleDetailViewModel.m in Sources */,
 				0038F18820CE295C00094EB9 /* ScheduleDetailPage.m in Sources */,
 				0038F17720CE294800094EB9 /* ScheduleView.m in Sources */,
 				003EDBC020C551AF00CFCFE9 /* STDataBaseUtil.m in Sources */,
@@ -1078,20 +870,9 @@
 				0038F19620CE298600094EB9 /* RespondModel.m in Sources */,
 				003EDBC520C551AF00CFCFE9 /* STUpdateUtil.m in Sources */,
 				003EDBE620C551AF00CFCFE9 /* STNavigationView.m in Sources */,
-<<<<<<< HEAD
-				003EDC3320C66C3500CFCFE9 /* ScheduleViewModel.m in Sources */,
 				CF43E41020CD842C0069AAFA /* ScheduleDetailResondModel.m in Sources */,
-				003EDBCA20C551AF00CFCFE9 /* STSheetModel.m in Sources */,
-				003EDC0B20C5549F00CFCFE9 /* MainPage.m in Sources */,
-				003EDC3020C66C2800CFCFE9 /* InfoViewModel.m in Sources */,
-				003EDC2520C6619700CFCFE9 /* InfoDetailPage.m in Sources */,
-				003EDC1A20C6614400CFCFE9 /* InfoView.m in Sources */,
 				CF43E3FD20CD265A0069AAFA /* ScheduleDetailView.m in Sources */,
-=======
-				0038F17B20CE294800094EB9 /* ScheduleDetailViewCell.m in Sources */,
-				003EDBCA20C551AF00CFCFE9 /* STSheetModel.m in Sources */,
 				0038F17920CE294800094EB9 /* InfoView.m in Sources */,
->>>>>>> origin/master
 				003EDBC820C551AF00CFCFE9 /* STTimeUtil.m in Sources */,
 				003EDBEA20C551AF00CFCFE9 /* STSwitchView.m in Sources */,
 				003EDBD220C551AF00CFCFE9 /* UITextField+Init.m in Sources */,
