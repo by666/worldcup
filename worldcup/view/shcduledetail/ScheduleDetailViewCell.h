@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScheduleDetailModel.h"
 
 @interface ScheduleDetailViewCell : UITableViewCell
+
+-(void)updateData:(ScheduleDetailModel *)model;
++(NSString *)identify;
 
 @end

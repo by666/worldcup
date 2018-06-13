@@ -45,11 +45,19 @@
     _scheduleDetailView.frame = CGRectMake(0, StatuBarHeight + NavigationBarHeight, ScreenWidth, ContentHeight);
     _scheduleDetailView.backgroundColor = cwhite;
     [self.view addSubview:_scheduleDetailView];
+    
+    
 }
 
 
+-(void)onInitAdMob{
+    [self initAdmob];
+}
+
 -(void)onRequestDatas:(Boolean)success{
-    
+    if(success){
+        [_scheduleDetailView updateView];
+    }
 }
 
 @end

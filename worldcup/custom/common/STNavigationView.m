@@ -66,7 +66,7 @@
 
     if(mNeedBack){
         _backBtn = [[UIButton alloc]init];
-        UIImage *image = [UIImage imageNamed:@"ic_arrow_back_grey"];
+        UIImage *image = [UIImage imageNamed:@"ic_back"];
         [_backBtn setImage:image forState:UIControlStateNormal];
         _backBtn.frame = CGRectMake(0, 0, STWidth(30) + image.size.width,NavigationBarHeight);
         [_backBtn addTarget:self action:@selector(OnBackBtnClick) forControlEvents:UIControlEventTouchUpInside];

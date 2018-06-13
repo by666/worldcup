@@ -8,11 +8,14 @@
 
 #import "ScheduleDetailViewModel.h"
 #import "STNetUtil.h"
+#import "ScheduleDetailResondModel.h"
+#import "ScheduleDetailModel.h"
 @implementation ScheduleDetailViewModel
 
 -(instancetype)initWithData:(ScheduleModel *)model{
     if(self == [super init]){
         self.model = model;
+        [STLog print:model.match_id];
     }
     return self;
 }
@@ -21,20 +24,27 @@
     if(_delegate){
         WS(weakSelf)
         [STNetUtil get:[NSString stringWithFormat:@"%@%@",ScheduleDetailUrl,_model.match_id] parameters:nil success:^(id respondObj) {
-            ScheduleRespondModel *respondModel = [ScheduleRespondModel mj_objectWithKeyValues:respondObj];
-            NSMutableArray *originDatas = [ScheduleModel mj_objectArrayWithKeyValuesArray:respondModel.list];
-            NSInteger total = [originDatas count];
-            weakSelf.datas = [self sortDatas:originDatas];
-            weakSelf.height = [self countTableViewHeight:total];
+            NSError *error;
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:respondObj options:NSJSONReadingMutableContainers error:&error];
+            NSDictionary *infoDic = [dic objectForKey:@"info"];
+            NSDictionary *recordDic = [infoDic objectForKey:@"recent_record"];
+            weakSelf.aTeamDatas = [ScheduleDetailModel mj_objectArrayWithKeyValuesArray:[recordDic objectForKey:@"team_A"]];
+            weakSelf.bTeamDatas = [ScheduleDetailModel mj_objectArrayWithKeyValuesArray:[recordDic objectForKey:@"team_B"]];
             if(weakSelf.delegate){
-                [weakSelf.delegate onRequestCallback:YES errorMsg:MSG_SUCCESS];
+                [weakSelf.delegate onRequestDatas:YES];
             }
         } failure:^(NSError *error) {
             if(weakSelf.delegate){
-                [weakSelf.delegate onRequestCallback:NO errorMsg:MSG_ERROR];
+                [weakSelf.delegate onRequestDatas:NO];
             }
         }];
         [_delegate onRequestDatas:YES];
+    }
+}
+
+-(void)initAdMob{
+    if(_delegate){
+        [_delegate onInitAdMob];
     }
 }
 

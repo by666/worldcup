@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = cwhite;
-    [self showSTNavigationBar:MSG_INFO_TITLE needback:NO];
+    [self showSTNavigationBar:MSG_SCHEDULE_TITLE needback:NO];
     [self initView];
     [self initAdmob];
 }
@@ -33,6 +33,7 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     [self setStatuBarBackgroud:c03];
 }
+
 
 
 
@@ -68,23 +69,4 @@
     }
 }
 
-
--(void)initAdmob{
-    [self createBanner:self];
-}
-
--(void)createBanner:(UIViewController *)sender
-{
-    GADRequest *request = [GADRequest request];
-    request.testDevices = [NSArray arrayWithObjects:@"450d43d2349f56a320138b0518b12c2195da2791", nil];
-
-    GADBannerView *bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
-    bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
-    bannerView.rootViewController = (id)self;
-    bannerView.delegate = (id<GADBannerViewDelegate>)self;
-    bannerView.frame = CGRectMake(0, ScreenHeight - STHeight(48), ScreenWidth , STHeight(48));
-    [bannerView loadRequest:request];
-    
-    [sender.view addSubview:bannerView];
-}
 @end

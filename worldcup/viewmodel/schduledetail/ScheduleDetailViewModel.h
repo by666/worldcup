@@ -11,6 +11,7 @@
 
 @protocol ScheduleDetailViewDelegate
 
+-(void)onInitAdMob;
 -(void)onRequestDatas:(Boolean)success;
 
 @end
@@ -18,8 +19,10 @@
 @interface ScheduleDetailViewModel : NSObject
 @property(weak, nonatomic)id <ScheduleDetailViewDelegate> delegate;
 @property(strong, nonatomic)ScheduleModel *model;
+@property(strong, nonatomic)NSMutableArray *aTeamDatas;
+@property(strong, nonatomic)NSMutableArray *bTeamDatas;
 
 -(instancetype)initWithData:(ScheduleModel *)model;
 -(void)requestDatas;
-
+-(void)initAdMob;
 @end

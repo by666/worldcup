@@ -7,7 +7,6 @@
 //
 
 #import "InfoDetailPage.h"
-
 @interface InfoDetailPage ()
 
 @end

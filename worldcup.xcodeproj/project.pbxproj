@@ -70,6 +70,12 @@
 		003EDC3A20C781AF00CFCFE9 /* ScheduleTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EDC3920C781AF00CFCFE9 /* ScheduleTitleViewCell.m */; };
 		003EDC3E20C78C1C00CFCFE9 /* libUMessage_Sdk_1.5.0a.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 003EDC3C20C78C1C00CFCFE9 /* libUMessage_Sdk_1.5.0a.a */; };
 		83707B895F078A657C64F156 /* Pods_worldcup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE5F5B46D5EA21EF0AD8E05 /* Pods_worldcup.framework */; };
+		CF43E3FD20CD265A0069AAFA /* ScheduleDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43E3FC20CD265A0069AAFA /* ScheduleDetailView.m */; };
+		CF43E40020CD26710069AAFA /* ScheduleDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43E3FF20CD26710069AAFA /* ScheduleDetailViewModel.m */; };
+		CF43E40D20CD828E0069AAFA /* ScheduleDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43E40C20CD828E0069AAFA /* ScheduleDetailModel.m */; };
+		CF43E41020CD842C0069AAFA /* ScheduleDetailResondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43E40F20CD842C0069AAFA /* ScheduleDetailResondModel.m */; };
+		CF43E41320CD90BC0069AAFA /* ScheduleDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43E41220CD90BC0069AAFA /* ScheduleDetailViewCell.m */; };
+		CF43E41520CDA3230069AAFA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF43E41420CDA3230069AAFA /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -197,6 +203,18 @@
 		003EDC3D20C78C1C00CFCFE9 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
 		0BE5F5B46D5EA21EF0AD8E05 /* Pods_worldcup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_worldcup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B663E8DAD9BB96CBB69816 /* Pods-worldcup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldcup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-worldcup/Pods-worldcup.debug.xcconfig"; sourceTree = "<group>"; };
+		CF43E3FB20CD265A0069AAFA /* ScheduleDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailView.h; sourceTree = "<group>"; };
+		CF43E3FC20CD265A0069AAFA /* ScheduleDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailView.m; sourceTree = "<group>"; };
+		CF43E3FE20CD26710069AAFA /* ScheduleDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailViewModel.h; sourceTree = "<group>"; };
+		CF43E3FF20CD26710069AAFA /* ScheduleDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailViewModel.m; sourceTree = "<group>"; };
+		CF43E40B20CD828E0069AAFA /* ScheduleDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailModel.h; sourceTree = "<group>"; };
+		CF43E40C20CD828E0069AAFA /* ScheduleDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailModel.m; sourceTree = "<group>"; };
+		CF43E40E20CD842C0069AAFA /* ScheduleDetailResondModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailResondModel.h; sourceTree = "<group>"; };
+		CF43E40F20CD842C0069AAFA /* ScheduleDetailResondModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailResondModel.m; sourceTree = "<group>"; };
+		CF43E41120CD90BC0069AAFA /* ScheduleDetailViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailViewCell.h; sourceTree = "<group>"; };
+		CF43E41220CD90BC0069AAFA /* ScheduleDetailViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailViewCell.m; sourceTree = "<group>"; };
+		CF43E41420CDA3230069AAFA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CF43E41620CEB0070069AAFA /* worldcup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = worldcup.entitlements; sourceTree = "<group>"; };
 		F215627FF075B719AEDD0E1D /* Pods-worldcup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldcup.release.xcconfig"; path = "Pods/Target Support Files/Pods-worldcup/Pods-worldcup.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +262,7 @@
 		003EDB2220C5360E00CFCFE9 /* worldcup */ = {
 			isa = PBXGroup;
 			children = (
+				CF43E41620CEB0070069AAFA /* worldcup.entitlements */,
 				003EDC3B20C78C1C00CFCFE9 /* UMessage_Sdk_1.5.0a */,
 				003EDBEF20C5524500CFCFE9 /* page */,
 				003EDBED20C5523E00CFCFE9 /* view */,
@@ -260,6 +279,7 @@
 				003EDB2C20C5361700CFCFE9 /* Assets.xcassets */,
 				003EDB3120C5361700CFCFE9 /* Info.plist */,
 				003EDB3220C5361700CFCFE9 /* main.m */,
+				CF43E41420CDA3230069AAFA /* Launch Screen.storyboard */,
 			);
 			path = worldcup;
 			sourceTree = "<group>";
@@ -473,6 +493,7 @@
 		003EDBED20C5523E00CFCFE9 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				CF43E40220CD81E90069AAFA /* shcduledetail */,
 				003EDC1E20C6615E00CFCFE9 /* main */,
 				003EDC1F20C6616600CFCFE9 /* info */,
 				003EDC2020C6616A00CFCFE9 /* schedule */,
@@ -483,10 +504,10 @@
 		003EDBEE20C5524200CFCFE9 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				CF43E40720CD82330069AAFA /* info */,
+				CF43E40120CD81DE0069AAFA /* scheduledetail */,
 				003EDC3420C6721600CFCFE9 /* schedule */,
 				003EDBF120C5527100CFCFE9 /* net */,
-				003EDC1220C62CF100CFCFE9 /* ScheduleModel.h */,
-				003EDC1320C62CF100CFCFE9 /* ScheduleModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -494,7 +515,7 @@
 		003EDBEF20C5524500CFCFE9 /* page */ = {
 			isa = PBXGroup;
 			children = (
-				003EDC2620C6619900CFCFE9 /* schedule */,
+				003EDC2620C6619900CFCFE9 /* scheduledetail */,
 				003EDC2220C6618500CFCFE9 /* info */,
 				003EDC2120C6617E00CFCFE9 /* main */,
 			);
@@ -504,12 +525,10 @@
 		003EDBF020C5524B00CFCFE9 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
-				003EDC0F20C5557500CFCFE9 /* MainViewModel.h */,
-				003EDC1020C5557500CFCFE9 /* MainViewModel.m */,
-				003EDC2E20C66C2800CFCFE9 /* InfoViewModel.h */,
-				003EDC2F20C66C2800CFCFE9 /* InfoViewModel.m */,
-				003EDC3120C66C3500CFCFE9 /* ScheduleViewModel.h */,
-				003EDC3220C66C3500CFCFE9 /* ScheduleViewModel.m */,
+				CF43E40620CD82290069AAFA /* info */,
+				CF43E40520CD821C0069AAFA /* schduledetail */,
+				CF43E40420CD82120069AAFA /* schudule */,
+				CF43E40320CD82030069AAFA /* main */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -572,18 +591,20 @@
 			path = info;
 			sourceTree = "<group>";
 		};
-		003EDC2620C6619900CFCFE9 /* schedule */ = {
+		003EDC2620C6619900CFCFE9 /* scheduledetail */ = {
 			isa = PBXGroup;
 			children = (
 				003EDC2820C661B500CFCFE9 /* ScheduleDetailPage.h */,
 				003EDC2920C661B500CFCFE9 /* ScheduleDetailPage.m */,
 			);
-			path = schedule;
+			path = scheduledetail;
 			sourceTree = "<group>";
 		};
 		003EDC3420C6721600CFCFE9 /* schedule */ = {
 			isa = PBXGroup;
 			children = (
+				003EDC1220C62CF100CFCFE9 /* ScheduleModel.h */,
+				003EDC1320C62CF100CFCFE9 /* ScheduleModel.m */,
 				003EDC3520C6723300CFCFE9 /* ScheduleRespondModel.h */,
 				003EDC3620C6723300CFCFE9 /* ScheduleRespondModel.m */,
 			);
@@ -626,6 +647,71 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF43E40120CD81DE0069AAFA /* scheduledetail */ = {
+			isa = PBXGroup;
+			children = (
+				CF43E40B20CD828E0069AAFA /* ScheduleDetailModel.h */,
+				CF43E40C20CD828E0069AAFA /* ScheduleDetailModel.m */,
+				CF43E40E20CD842C0069AAFA /* ScheduleDetailResondModel.h */,
+				CF43E40F20CD842C0069AAFA /* ScheduleDetailResondModel.m */,
+			);
+			path = scheduledetail;
+			sourceTree = "<group>";
+		};
+		CF43E40220CD81E90069AAFA /* shcduledetail */ = {
+			isa = PBXGroup;
+			children = (
+				CF43E3FB20CD265A0069AAFA /* ScheduleDetailView.h */,
+				CF43E3FC20CD265A0069AAFA /* ScheduleDetailView.m */,
+				CF43E41120CD90BC0069AAFA /* ScheduleDetailViewCell.h */,
+				CF43E41220CD90BC0069AAFA /* ScheduleDetailViewCell.m */,
+			);
+			path = shcduledetail;
+			sourceTree = "<group>";
+		};
+		CF43E40320CD82030069AAFA /* main */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC0F20C5557500CFCFE9 /* MainViewModel.h */,
+				003EDC1020C5557500CFCFE9 /* MainViewModel.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		CF43E40420CD82120069AAFA /* schudule */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC3120C66C3500CFCFE9 /* ScheduleViewModel.h */,
+				003EDC3220C66C3500CFCFE9 /* ScheduleViewModel.m */,
+			);
+			path = schudule;
+			sourceTree = "<group>";
+		};
+		CF43E40520CD821C0069AAFA /* schduledetail */ = {
+			isa = PBXGroup;
+			children = (
+				CF43E3FE20CD26710069AAFA /* ScheduleDetailViewModel.h */,
+				CF43E3FF20CD26710069AAFA /* ScheduleDetailViewModel.m */,
+			);
+			path = schduledetail;
+			sourceTree = "<group>";
+		};
+		CF43E40620CD82290069AAFA /* info */ = {
+			isa = PBXGroup;
+			children = (
+				003EDC2E20C66C2800CFCFE9 /* InfoViewModel.h */,
+				003EDC2F20C66C2800CFCFE9 /* InfoViewModel.m */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		CF43E40720CD82330069AAFA /* info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -659,6 +745,11 @@
 				TargetAttributes = {
 					003EDB1F20C5360E00CFCFE9 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -685,6 +776,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF43E41520CDA3230069AAFA /* Launch Screen.storyboard in Resources */,
 				003EDB2D20C5361700CFCFE9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -758,6 +850,7 @@
 				003EDBC420C551AF00CFCFE9 /* STNetUtil.m in Sources */,
 				003EDB3320C5361700CFCFE9 /* main.m in Sources */,
 				003EDBE420C551AF00CFCFE9 /* STEdgeLabel.m in Sources */,
+				CF43E41320CD90BC0069AAFA /* ScheduleDetailViewCell.m in Sources */,
 				003EDBC920C551AF00CFCFE9 /* STAlertUtil.m in Sources */,
 				003EDC0E20C5556A00CFCFE9 /* MainView.m in Sources */,
 				003EDC1120C5557500CFCFE9 /* MainViewModel.m in Sources */,
@@ -772,6 +865,7 @@
 				003EDBBD20C551AF00CFCFE9 /* STConvertUtil.m in Sources */,
 				003EDBCD20C551AF00CFCFE9 /* NSString+Extension.m in Sources */,
 				003EDBDC20C551AF00CFCFE9 /* CircularProgressView.m in Sources */,
+				CF43E40D20CD828E0069AAFA /* ScheduleDetailModel.m in Sources */,
 				003EDBF420C5528A00CFCFE9 /* RespondModel.m in Sources */,
 				003EDBE720C551AF00CFCFE9 /* STRefreshTableView.m in Sources */,
 				003EDBCC20C551AF00CFCFE9 /* STPUtil.m in Sources */,
@@ -783,17 +877,20 @@
 				003EDBC020C551AF00CFCFE9 /* STDataBaseUtil.m in Sources */,
 				003EDBCE20C551AF00CFCFE9 /* UIButton+Init.m in Sources */,
 				003EDBCB20C551AF00CFCFE9 /* STColorUtil.m in Sources */,
+				CF43E40020CD26710069AAFA /* ScheduleDetailViewModel.m in Sources */,
 				003EDBD320C551AF00CFCFE9 /* UIView+Frame.m in Sources */,
 				003EDC3720C6723300CFCFE9 /* ScheduleRespondModel.m in Sources */,
 				003EDC3A20C781AF00CFCFE9 /* ScheduleTitleViewCell.m in Sources */,
 				003EDBC520C551AF00CFCFE9 /* STUpdateUtil.m in Sources */,
 				003EDBE620C551AF00CFCFE9 /* STNavigationView.m in Sources */,
 				003EDC3320C66C3500CFCFE9 /* ScheduleViewModel.m in Sources */,
+				CF43E41020CD842C0069AAFA /* ScheduleDetailResondModel.m in Sources */,
 				003EDBCA20C551AF00CFCFE9 /* STSheetModel.m in Sources */,
 				003EDC0B20C5549F00CFCFE9 /* MainPage.m in Sources */,
 				003EDC3020C66C2800CFCFE9 /* InfoViewModel.m in Sources */,
 				003EDC2520C6619700CFCFE9 /* InfoDetailPage.m in Sources */,
 				003EDC1A20C6614400CFCFE9 /* InfoView.m in Sources */,
+				CF43E3FD20CD265A0069AAFA /* ScheduleDetailView.m in Sources */,
 				003EDBC820C551AF00CFCFE9 /* STTimeUtil.m in Sources */,
 				003EDBEA20C551AF00CFCFE9 /* STSwitchView.m in Sources */,
 				003EDBD220C551AF00CFCFE9 /* UITextField+Init.m in Sources */,
@@ -918,7 +1015,7 @@
 			baseConfigurationReference = 80B663E8DAD9BB96CBB69816 /* Pods-worldcup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = worldcup/worldcup.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AB86U4DT8H;
 				GCC_PREFIX_HEADER = worldcup/macro/STPrefixHeader.pch;
@@ -942,7 +1039,7 @@
 			baseConfigurationReference = F215627FF075B719AEDD0E1D /* Pods-worldcup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = worldcup/worldcup.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AB86U4DT8H;
 				GCC_PREFIX_HEADER = worldcup/macro/STPrefixHeader.pch;

@@ -28,4 +28,7 @@
 
 -(void)showSTNavigationBar:(NSString *)title needback:(Boolean)needback rightBtn:(NSString *)rightStr rightColor:(UIColor *)color block:(void (^)(void))click;
 
+-(void)initAdmob;
+-(void)removeAd;
+
 @end

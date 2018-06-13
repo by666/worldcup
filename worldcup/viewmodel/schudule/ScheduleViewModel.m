@@ -33,7 +33,9 @@
 #pragma mark 请求
 -(void)requestNew{
     WS(weakSelf)
-    [STNetUtil get:ScheduleUrl parameters:nil success:^(id respondObj) {
+    NSString *dateStr = [STTimeUtil generateDate:[STTimeUtil getCurrentTimeStamp]];
+    NSString *urlStr = [NSString stringWithFormat:ScheduleUrl,dateStr];
+    [STNetUtil get:urlStr parameters:nil success:^(id respondObj) {
         ScheduleRespondModel *respondModel = [ScheduleRespondModel mj_objectWithKeyValues:respondObj];
         NSMutableArray *originDatas = [ScheduleModel mj_objectArrayWithKeyValuesArray:respondModel.list];
         NSInteger total = [originDatas count];

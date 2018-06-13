@@ -25,10 +25,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-    id controller;
-
-    
-    controller = [[MainPage alloc]init];
+    MainPage *controller = [[MainPage alloc]init];
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:controller];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
@@ -38,9 +35,10 @@
     [self initUmeng];
     [self initAdmob];
     [STUpdateUtil checkUpdate:^(NSString *appname, NSString *url, double version) {
-        //        [self showUpdateAlert:url version:version];
+//                [self showUpdateAlert:url version:version];
     }];
     
+
 
     
     

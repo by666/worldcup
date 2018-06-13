@@ -11,5 +11,5 @@
 @interface ScheduleDetailView : UIView
 
 -(instancetype)initWithViewModel:(ScheduleDetailViewModel *)viewModel;
-
+-(void)updateView;
 @end

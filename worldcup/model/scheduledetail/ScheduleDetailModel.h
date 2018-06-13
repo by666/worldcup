@@ -10,4 +10,10 @@
 
 @interface ScheduleDetailModel : NSObject
 
+@property(strong, nonatomic)NSString *competition;
+@property(strong, nonatomic)NSString *date;
+@property(strong, nonatomic)NSString *team_A_name;
+@property(strong, nonatomic)NSString *team_B_name;
+@property(strong, nonatomic)NSString *score;
+
 @end

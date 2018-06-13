@@ -25,7 +25,7 @@
     NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterMediumStyle];
     [formatter setTimeStyle:NSDateFormatterShortStyle];
-    [formatter setDateFormat:@"YYYY年MM月dd日"];
+    [formatter setDateFormat:@"YYYY-MM-dd"];
     
     NSDate* date = [NSDate dateWithTimeIntervalSince1970:[timestamp doubleValue]/ 1000.0];
     NSString* dateStr = [formatter stringFromDate:date];

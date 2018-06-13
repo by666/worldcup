@@ -10,4 +10,6 @@
 
 @interface ScheduleDetailResondModel : NSObject
 
+@property(strong, nonatomic)NSMutableDictionary *recent_record;
+
 @end
